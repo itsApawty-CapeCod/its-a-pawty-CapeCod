@@ -14,7 +14,6 @@
       color: #1B4F72;
     }
 
-    /* ── HERO ── */
     .hero {
       background: #1B4F72;
       padding: 4rem 2rem 3.5rem;
@@ -74,7 +73,6 @@
     }
     .hero-cta:hover { background: #e0741a; }
 
-    /* ── SECTIONS ── */
     .section {
       padding: 3rem 2rem;
       max-width: 860px;
@@ -96,7 +94,6 @@
       line-height: 1.15;
     }
 
-    /* ── PHOTO GRID ── */
     .photo-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -121,10 +118,7 @@
       object-fit: cover;
       display: block;
     }
-    .photo-slot .placeholder-icon {
-      font-size: 32px;
-      opacity: 0.4;
-    }
+    .photo-slot .placeholder-icon { font-size: 32px; opacity: 0.4; }
     .photo-slot .placeholder-text {
       font-size: 12px;
       font-weight: 700;
@@ -140,15 +134,8 @@
       text-align: center;
     }
 
-    /* ── REVIEWS ── */
-    .reviews-bg {
-      background: #fff;
-    }
-    .reviews-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
+    .reviews-bg { background: #fff; }
+    .reviews-list { display: flex; flex-direction: column; gap: 16px; }
     .review-card {
       background: #F5EFE6;
       border-radius: 14px;
@@ -171,48 +158,15 @@
       color: #fff;
       flex-shrink: 0;
     }
-    .review-name {
-      font-weight: 700;
-      font-size: 15px;
-      color: #1B4F72;
-    }
-    .review-dog {
-      font-size: 13px;
-      color: #999;
-    }
-    .stars {
-      color: #F4831F;
-      font-size: 14px;
-      margin-left: auto;
-      letter-spacing: 2px;
-    }
-    .review-text {
-      font-size: 15px;
-      color: #555;
-      line-height: 1.65;
-    }
+    .review-name { font-weight: 700; font-size: 15px; color: #1B4F72; }
+    .review-dog { font-size: 13px; color: #999; }
+    .stars { color: #F4831F; font-size: 14px; margin-left: auto; letter-spacing: 2px; }
+    .review-text { font-size: 15px; color: #555; line-height: 1.65; }
 
-    /* ── CONTACT ── */
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .two-col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
-    .field-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .field-label {
-      font-weight: 700;
-      font-size: 13px;
-      color: #1B4F72;
-    }
+    .contact-form { display: flex; flex-direction: column; gap: 16px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .field-group { display: flex; flex-direction: column; gap: 6px; }
+    .field-label { font-weight: 700; font-size: 13px; color: #1B4F72; }
     .field-input {
       width: 100%;
       padding: 11px 15px;
@@ -243,20 +197,17 @@
     }
     .submit-btn:hover { background: #F4831F; }
 
-    /* ── FOOTER ── */
     footer {
       background: #1B4F72;
       color: rgba(255,255,255,0.7);
       text-align: center;
       padding: 2rem 1.5rem;
       font-size: 14px;
-      margin-top: 0;
     }
     footer strong { color: #fff; }
     footer a { color: #F4831F; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
 
-    /* ── RESPONSIVE ── */
     @media (max-width: 520px) {
       .two-col { grid-template-columns: 1fr; }
       .photo-grid { grid-template-columns: repeat(2, 1fr); }
@@ -266,7 +217,6 @@
 </head>
 <body>
 
-  <!-- HERO -->
   <header class="hero">
     <div class="hero-badge">Dog Boarding · Cape Cod, MA</div>
     <h1>It's a <span>Pawty</span></h1>
@@ -274,109 +224,93 @@
     <a href="#contact" class="hero-cta">Book a stay</a>
   </header>
 
-  <!-- PHOTOS -->
   <div style="background: #F5EFE6;">
     <div class="section">
       <div class="section-label">The pack</div>
       <h2>Life at the Pawty</h2>
       <div class="photo-grid">
-        <!--
-          TO ADD PHOTOS: Replace each <div class="photo-slot"> block with:
-          <div class="photo-slot"><img src="your-photo.jpg" alt="Dogs playing"></div>
-        -->
-        <div class="photo-slot">
-          <span class="placeholder-icon">📷</span>
-          <span class="placeholder-text">Add a photo</span>
-        </div>
-        <div class="photo-slot">
-          <span class="placeholder-icon">📷</span>
-          <span class="placeholder-text">Add a photo</span>
-        </div>
-        <div class="photo-slot">
-          <span class="placeholder-icon">📷</span>
-          <span class="placeholder-text">Add a photo</span>
-        </div>
-        <div class="photo-slot">
-          <span class="placeholder-icon">📷</span>
-          <span class="placeholder-text">Add a photo</span>
-        </div>
-        <div class="photo-slot">
-          <span class="placeholder-icon">📷</span>
-          <span class="placeholder-text">Add a photo</span>
-        </div>
-        <div class="photo-slot">
-          <span class="placeholder-icon">📷</span>
-          <span class="placeholder-text">Add a photo</span>
-        </div>
+        <!-- TO ADD PHOTOS: replace each block below with:
+             <div class="photo-slot"><img src="your-photo.jpg" alt="Dogs playing"></div> -->
+        <div class="photo-slot"><span class="placeholder-icon">📷</span><span class="placeholder-text">Add a photo</span></div>
+        <div class="photo-slot"><span class="placeholder-icon">📷</span><span class="placeholder-text">Add a photo</span></div>
+        <div class="photo-slot"><span class="placeholder-icon">📷</span><span class="placeholder-text">Add a photo</span></div>
+        <div class="photo-slot"><span class="placeholder-icon">📷</span><span class="placeholder-text">Add a photo</span></div>
+        <div class="photo-slot"><span class="placeholder-icon">📷</span><span class="placeholder-text">Add a photo</span></div>
+        <div class="photo-slot"><span class="placeholder-icon">📷</span><span class="placeholder-text">Add a photo</span></div>
       </div>
-      <p class="photo-caption">Replace the placeholder slots above with your own photos — see the comments in the HTML file.</p>
     </div>
   </div>
 
-  <!-- REVIEWS -->
   <div class="reviews-bg">
     <div class="section">
       <div class="section-label">Happy pups</div>
       <h2>What pet parents say</h2>
       <div class="reviews-list">
 
-        <!-- REVIEW 1 — replace with a real review -->
         <div class="review-card">
           <div class="review-header">
-            <div class="review-avatar">SR</div>
-            <div>
-              <div class="review-name">Sarah R.</div>
-              <div class="review-dog">Golden Retriever, Max</div>
-            </div>
+            <div class="review-avatar">DA</div>
+            <div><div class="review-name">Dave A.</div><div class="review-dog">Verified Stay · August 2026</div></div>
             <div class="stars">★★★★★</div>
           </div>
-          <p class="review-text">Max came home happy, tired, and smelling like a good time. We could tell he was well loved the whole week. Can't imagine leaving him anywhere else on the Cape.</p>
+          <p class="review-text">Emily and Caroline took amazing care of Coco! We were visiting the Cape for a week and knew she was in great hands. Frequent communication, super flexible with drop off/pick up, and a great fenced in backyard! Will definitely reach out if we are back in town.</p>
         </div>
 
-        <!-- REVIEW 2 — replace with a real review -->
         <div class="review-card">
           <div class="review-header">
-            <div class="review-avatar">TM</div>
-            <div>
-              <div class="review-name">Tom M.</div>
-              <div class="review-dog">Lab mix, Pepper</div>
-            </div>
+            <div class="review-avatar">CW</div>
+            <div><div class="review-name">Claire W.</div><div class="review-dog">Verified Stay · August 2026</div></div>
             <div class="stars">★★★★★</div>
           </div>
-          <p class="review-text">Photo updates every day made it so easy to relax on vacation. Pepper clearly had a blast — she whimpered when we picked her up to leave. That says it all.</p>
+          <p class="review-text">Emily provided our Lucy with a home away from home. We were a little anxious about leaving our needy rescue dog, but Lucy immediately took to Emily and made herself at home in the spacious fenced backyard. She is so knowledgeable about caring for dogs and asked all the right questions — including administering meds twice daily. We couldn't have left her in better hands.</p>
         </div>
 
-        <!-- REVIEW 3 — replace with a real review -->
         <div class="review-card">
           <div class="review-header">
-            <div class="review-avatar">JL</div>
-            <div>
-              <div class="review-name">Jamie L.</div>
-              <div class="review-dog">Doodle, Biscuit</div>
-            </div>
+            <div class="review-avatar">CL</div>
+            <div><div class="review-name">Christopher L.</div><div class="review-dog">Verified Stay · October 2024</div></div>
             <div class="stars">★★★★★</div>
           </div>
-          <p class="review-text">We have an anxious dog and were nervous about boarding. It's a Pawty was incredibly patient with Biscuit and kept us in the loop the whole time. We've already booked again.</p>
+          <p class="review-text">Emily and Caroline are kind and reliable. They took care of our dog Lily as if she was their own. Flexible with pickup and drop off, and we felt at ease knowing someone was home with her during the day. Lily had a great time with their dog Goose and came back happy and tired out. We will definitely book again.</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">MB</div>
+            <div><div class="review-name">Mariel B.</div><div class="review-dog">Verified Stay · August 2026</div></div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-text">So amazing and accommodating! They have a great fenced yard and a super sweet golden retriever who got along with my Jelly perfectly. Took her on walks and were super responsive throughout. I would 1000% recommend!</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">EW</div>
+            <div><div class="review-name">Elisha W.</div><div class="review-dog">Verified Stay · August 2026</div></div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-text">Our little guy Pepper had a great stay with Emily and Caroline! They were flexible and happy to accommodate whatever was needed. Quick to communicate and sent us updates and pictures throughout the week. They have a fenced yard that was perfect for him to play outside. Definitely recommend!</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">KI</div>
+            <div><div class="review-name">Koto I.</div><div class="review-dog">Verified Stay · September 2023</div></div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-text">Emily was amazing — Hazel had the best time and they were clearly fast friends! She was responsive and asked all the right questions. She clearly loves dogs, took Hazel for multiple walks, and texted updates throughout the day. Highly recommend — she is the best!</p>
         </div>
 
       </div>
     </div>
   </div>
 
-  <!-- CONTACT -->
   <div style="background: #F5EFE6;">
     <div class="section" id="contact">
       <div class="section-label">Reach out</div>
       <h2>Book a stay or ask a question</h2>
-
-      <!--
-        TO MAKE THIS FORM WORK:
-        Option A (easiest): Replace the <form> tag with:
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        Sign up free at formspree.io — responses go to your email.
-
-        Option B: Swap this out for a Google Form embed.
-      -->
+      <!-- TO MAKE THIS FORM SEND EMAILS: sign up free at formspree.io, then replace
+           the <form> tag with: <form action="https://formspree.io/f/YOUR_ID" method="POST"> -->
       <form class="contact-form" onsubmit="handleSubmit(event)">
         <div class="two-col">
           <div class="field-group">
@@ -412,7 +346,6 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer>
     <strong>It's a Pawty</strong> &nbsp;·&nbsp; Cape Cod, MA
     &nbsp;·&nbsp; <a href="mailto:hello@itsapawty.com">hello@itsapawty.com</a>
